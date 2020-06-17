@@ -2,46 +2,71 @@ body, html{
     margin: 0;
     padding: 0;
     background-color: #44337a;
+    color: #FAF5FF;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+.title{
+    display: block;
+    text-align: center;
 }
 
 .shop{
+    width: 100vw;
+    background-color: #553C9A;
 
 }
 
 .shop__icon--circle{
-
+    display: flex;
+    align-items: flex-start;
+    background-color: #E9D8FD;
+    border-radius: 50%;
+    width: max-content;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5rem;
 }
 
 .shop__icon--img{
 
 }
 
-.shop__icon{
-
-}
-
 .shop__text{
-
-}
-
-.shop__text{
-
-}
-
-.shop__rate{
-
+    color: #FAF5FF;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .shop__number{
-
+    color: #FAF5FF;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 2rem;
+}
+.shop__rate{
+    color: #FAF5FF;
+    display: flex;
+    justify-content: flex-end;
 }
 
 .shop__text--name{
-
+    font-size: large;
 }
 
 .shop__text--price{
+
+}
+.info__bio{
+
+ 
+}
+.info__stats{
+
+
+}
+
+.info__stats--results{
 
 }
 

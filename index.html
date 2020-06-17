@@ -9,14 +9,16 @@
 </head>
 <body>
     <main>
-    <h1>Cookie Clunker</h1>
+    <h1 class="title">Cookie Clunker</h1>
+    <!--MAIN PAGE-->
     <section>
-        <span>123456 Cookies</span>
-        <span>200 Cookies/Click</span>
-        <button>
-            <img src="cookie.svg" alt="cookie">
+        <span class="title">123456 Cookies</span>
+        <span class="title">200 Cookies/Click</span>
+        <button >
+            <img class="title" src="cookie.svg" alt="cookie">
         </button>
     </section>
+    <!--SHOP PAGE-->
     <section>
         <h2>Shop</h2>
         <!--CURSOR--> 
@@ -254,6 +256,7 @@
             </button>
         </div>
     </section>
+    <!--INFO PAGE-->
     <section>
         <h2>Info</h2>
         <select name="selected-chef" id="seleted-chef">
@@ -285,6 +288,50 @@
                 Das Kapital
             </option>
         </select>
+        <img class="info__icon" src="grandma.svg" alt="grandma">
+        <div class="info__bio">Your group of grandmas is baking you cookies at an extrardinary rate!
+        </div>
+        <div class="info__stats"># Grandmas:</div>
+        <div class="info__stats">CPS:</div>
+        <div class="info__stats">Lifeetime:</div>
+        <div class="info__stats--results">12</div>
+        <div class="info__stats--results">4000</div>
+        <div class="info__stats--results">1.8b</div>
+        <button class="info__buy--individual">
+            Buy: $350
+        </button>
+        <button class="info__sell--individual">
+            Sell: $275
+        </button>
+        <h3>Upgrades</h3>
+        <button class="info__upgrades">
+            <div>Rolling Pins:</div>
+            <div>$400</div>
+            <div>+40cps/grandma</div>
+        </button>
+        <button class="info__upgrades">
+            <div>Rolling Pins:</div>
+            <div>$400</div>
+            <div>+40cps/grandma</div>
+        </button>
+        <h3>Bought</h3>
+        <div class="info__bought--box">
+            <div class="info__bought--left">
+                <div class="info__bought--head">Name</div>
+                <div class="info__bought--main">Rolling Pins:</div>
+                <div class="info__bought--main">Flour Board:</div>
+            </div>
+            <div class="info__bought--center">
+                <div class="info__bought--head">Cost</div>
+                <div class="info__bought--main">300 cookies</div>
+                <div class="info__bought--main">2500 cookies</div>
+            </div>
+            <div class="info__bought--right">
+                <div class="info__bought--head">Profit</div>
+                <div class="info__bought--main">+16341 cookies</div>
+                <div class="info__bought--main">+53712 cookies</div>
+            </div>
+        </div>
     </section>
 </main>
 </body>
