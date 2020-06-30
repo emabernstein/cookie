@@ -5,6 +5,11 @@ body, html{
     color: #FAF5FF;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
+main{
+    padding: 0.75rem;
+    padding-bottom: 6rem;
+
+}
 .title{
     text-align: center;
     margin-bottom: 2rem;
@@ -13,11 +18,14 @@ body, html{
 .subtitle{
     display: block;
     text-align: center;
+    font-size: 36px;
+    font-weight: bold;
 }
 .subtitle2{
     display: block;
     text-align: center;
     margin-top: 2rem;
+    font-size: 24px;
 }
 
 .cookie{
@@ -26,12 +34,22 @@ body, html{
     margin-top: 2rem;
 }
 
+.header{
+    letter-spacing: 0.05rem;
+    font-size: 18px;
+    color: #D6BCFA;
+}
+
 .shop{
     width: 100%;
     background-color: #553C9A;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: 0.75rem;
+    border-radius: 4px;
+    border: none;
+    padding: 0.75rem;
 }
 
 .shop__icon--circle{
@@ -62,6 +80,7 @@ body, html{
     flex-direction: column;
     align-items: flex-start;
     margin-left: 0.75rem;
+    font-size: 18px;
 }
 
 .shop__info{
@@ -69,11 +88,12 @@ body, html{
     justify-content: flex-end;
     align-items: center;
     margin-right: 0.75rem;
+    font-size: 18px;
 }
 
 .shop__number{
     color: #FAF5FF;
-    font-size: 2rem;
+    font-size: 48px;
 }
 .shop__rate{
     color: #FAF5FF;
@@ -81,22 +101,23 @@ body, html{
 }
 
 .shop__text--name{
-    font-size: large;
+    font-size: 24px;
 }
 
-.info__selector{
-    color: #E9D8FD;
-    width: 100%;
-    height: 3rem;
+.shop__text--price{
+    color: #E9D8FD;;
 }
+
 
 .info__icon{
     display: flex;
-    
+    align-items: flex-start;
+    margin-top: 1.25rem;
 
 }
 .info__icon-img{
     width: 5.5rem;
+
 }
 
 .info__bio{
@@ -106,6 +127,7 @@ body, html{
 .info__bio-and-stats{
     display: flex;
     flex-direction: column;
+    margin-left: 2rem;
 }
 .info__stats-with-results{
     display: flex;
@@ -113,29 +135,35 @@ body, html{
     flex-direction: column;
 }
 .info__stats{
-    display: flex;
     justify-content: start;
+    width: 50%;
+    text-align: right;
+}
+
+.info__stat{
+    display: flex;
+    justify-content: space-between;
+    max-width: 12rem;
 }
 .info__stats--results{
     display: flex;
     justify-content: flex-end;
-
 }
 
 .info__buy-sell{
     display: flex;
     justify-content: space-around;
+    margin-top: 1.5rem;
 }
 
 .info__buy--individual{
     background-color: #D6BCFA;
     color: #44337A;;
+    font-size: 1.5rem;
+    padding: 0.625rem 1rem;
+    border-radius: 3px;
 }
 
-.info__sell--individual{
-    background-color: #D6BCFA;
-    color: #44337A;
-}
 
 .info__upgradesbox{
     display: flex;
@@ -144,34 +172,41 @@ body, html{
 .info__upgrades{
     display: flex;
     flex-direction: column;
+    background-color: #D6BCFA;
+    color: #44337A;
+    align-items: center;
+    border-radius: 3px;
+    padding: 0.75rem;
 }
 .info__upgrades--top{
-    background-color: #D6BCFA;
-    color: #44337A;
+    font-size: 18px;
+    font-weight: bold;
 }
 .info__upgrades--middle{
-    background-color: #D6BCFA;
-    color: #44337A;
-
+    font-size: 18px;
+    margin: 1rem;
 }
 .info__upgrades--bottom{
-    background-color: #D6BCFA;
-    color: #44337A;
+    font-size: 14px;
 }
 
 
 .info__bought--box{
-    display: flex;
-    
+    background-color: #D6BCFA;
+    color: #000000;
+    border-radius: 3px;
+    padding: 0.75rem 0.5rem;
 }
 .info__bought--head{
     display: flex;
-    
+    font-weight: bold;
+    justify-content: space-between;
 
 }
 .info__bought{
     display: flex;
-
+    justify-content: space-between;
+    margin-top: 0.5rem;
 }
    
    
@@ -181,4 +216,58 @@ body, html{
         max-width: 500px;
         margin: auto;
     }
+}
+
+
+
+
+select {
+    -webkit-appearance: none;
+	-moz-appearance: none;
+    appearance: none;
+    width: 100%;
+    padding: 0.5rem;
+    background-color: transparent;
+    border-radius: 4px;
+    border: 2px solid #B794F4;
+
+    font-family: Arial;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #E9D8FD;
+}
+
+.select__wrapper {
+	position: relative;	
+}
+
+.select__wrapper:after {
+    content: "";
+    width: 0.75rem;
+    height: 0.75rem;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 20px;
+    pointer-events: none;
+    background-image: url(/chevron.svg);
+    background-repeat: no-repeat;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 0.5rem 2rem;
+    background-color: #553C9A;
+    border-top: 1px solid #3c366b;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.footer__button img{
+    height: 3rem;
+    width: 3rem;
 }

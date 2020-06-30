@@ -14,16 +14,16 @@
     <section>
         <span class="subtitle">123456 Cookies</span>
         <span class="subtitle2">200 Cookies/Click</span>
-        <button class="cookie">
+        <button class="cookie" onclick="cookieClicking()">
             <img src="cookie.svg" alt="cookie">
         </button>
     </section>
     <!--SHOP PAGE-->
     <section>
-        <h2>Shop</h2>
+        <h2 class="header">SHOP</h2>
         <!--CURSOR--> 
         <div>
-            <button class="shop">
+            <button class="shop" onclick="buy('cursor')">
                 <div class="shop__name">
                     <div class="shop__icon--circle">
                         <img class="shop__icon--img" src="cursor.svg" alt="cursor">
@@ -49,7 +49,7 @@
         </div>
         <!--GRANDMA--> 
         <div>
-            <button class="shop">
+            <button class="shop" onclick="buy('grandma')">
                 <div class="shop__name">
                     <div class="shop__icon--circle">
                         <img class="shop__icon--img" src="grandma.svg" alt="grandma">
@@ -75,7 +75,7 @@
         </div>
         <!--FARM--> 
         <div>
-            <button class="shop">
+            <button class="shop" onclick="buy('farm')">
                 <div class="shop__name">
                     <div class="shop__icon--circle">
                         <img class="shop__icon--img" src="farm.svg" alt="farm">
@@ -101,7 +101,7 @@
         </div>
         <!--MINE--> 
         <div>
-            <button class="shop">
+            <button class="shop" onclick="buy('mine')">
                 <div class="shop__name">
                     <div class="shop__icon--circle">
                         <img class="shop__icon--img" src="mine.svg" alt="mine">
@@ -127,7 +127,7 @@
         </div>
         <!--FACTORY--> 
         <div>
-            <button class="shop">
+            <button class="shop" onclick="buy('factory')">
                 <div class="shop__name">
                     <div class="shop__icon--circle">
                         <img class="shop__icon--img" src="factory.svg" alt="factory">
@@ -153,7 +153,7 @@
         </div>
         <!--BANK--> 
         <div>
-            <button class="shop">
+            <button class="shop" onclick="buy('bank')">
                 <div class="shop__name">
                     <div class="shop__icon--circle">
                         <img class="shop__icon--img" src="bank.svg" alt="bank">
@@ -179,7 +179,7 @@
         </div>
         <!--IRS--> 
         <div>
-            <button class="shop">
+            <button class="shop" onclick="buy('irs')">
                 <div class="shop__name">
                     <div class="shop__icon--circle">
                         <img class="shop__icon--img" src="irs.svg" alt="irs">
@@ -205,7 +205,7 @@
         </div>
         <!--STATE--> 
         <div>
-            <button class="shop">
+            <button class="shop" onclick="buy('state')">
                 <div class="shop__name">
                     <div class="shop__icon--circle">
                         <img class="shop__icon--img" src="state.svg" alt="state">
@@ -231,7 +231,7 @@
         </div>
         <!--KAPITAL--> 
         <div>
-            <button class="shop">
+            <button class="shop" onclick="buy('dasKapital')">
                 <div class="shop__name">
                     <div class="shop__icon--circle">
                         <img class="shop__icon--img" src="kapital.svg" alt="kapital">
@@ -258,7 +258,8 @@
     </section>
     <!--INFO PAGE-->
     <section>
-        <h2>Info</h2>
+        <h2 class="header"> INFO</h2>
+        <div class="select__wrapper">
         <select class="info__selector" name="selected-chef" id="seleted-chef">
             <option value="Cursor">
                 Cursor
@@ -288,18 +289,25 @@
                 Das Kapital
             </option>
         </select>
+    </div>
         <div class="info__icon">
             <img class="info__icon-img" src="grandma.svg" alt="grandma">
             <div class="info__bio-and-stats">
                 <div class="info__bio">Your group of grandmas is baking you cookies at an extrardinary rate!
                 </div>
                 <div class="info__stats-with-results">
+                    <div class="info__stat">
                 <div class="info__stats"># Grandmas:</div>
                 <div class="info__stats--results">12</div>
+                    </div> 
+                    <div class="info__stat">
                 <div class="info__stats">CPS:</div>
                 <div class="info__stats--results">4000</div>
+                    </div>
+                    <div class="info__stat">
                 <div class="info__stats">Lifeetime:</div>
                 <div class="info__stats--results">1.8b</div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -307,7 +315,7 @@
             <button class="info__buy--individual">
                 Buy: $350
             </button>
-            <button class="info__sell--individual">
+            <button class="info__buy--individual">
                 Sell: $275
             </button>
         </div>
@@ -344,5 +352,16 @@
         </div>
     </section>
 </main>
+<footer class="footer">
+    <button class="footer__button">
+        <img src="cookie.svg" alt="cookie">
+    </button>
+    <button class="footer__button">
+        <img src="house.svg" alt="house">
+    </button>
+    <button class="footer__button">
+        <img src="question.svg" alt="question">
+    </button>
+</footer>
 </body>
 </html>
